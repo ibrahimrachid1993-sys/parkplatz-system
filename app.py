@@ -7,7 +7,7 @@ from PIL import Image, ImageEnhance
 
 from flask import Flask, render_template_string, request, redirect, jsonify, send_file
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", static_url_path="/static")
 
 # ===== SETTINGS =====
 ROWS = 4
